@@ -1,0 +1,20 @@
+{
+  "name": "exam-prep-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Competitive examination preparation platform for Indian exams: configurable exam patterns, question bank with review workflow, and a server-authoritative CBT engine.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "demo": "node server/demo.js",
+    "seed": "node server/seed/run.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.10.0"
+  }
+}
